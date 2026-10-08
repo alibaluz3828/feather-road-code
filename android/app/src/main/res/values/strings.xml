@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Feather Road Code</string>
+    <string name="preset_name">RETRO_NEON</string>
+
+    <string name="app_title">FEATHER ROAD CODE</string>
+    <string name="splash_subtitle">READ THE CODE · SET THE SIGNS</string>
+    <string name="splash_loading">LOADING YARD</string>
+
+    <string name="menu_tagline">PROGRAM THE CART. CLEAR THE YARD.</string>
+    <string name="menu_disclaimer">FOR ENTERTAINMENT ONLY · NO WAGERING</string>
+    <string name="menu_play">PLAY</string>
+    <string name="menu_route_map">ROUTE MAP</string>
+    <string name="menu_sign_guide">SIGN GUIDE</string>
+    <string name="menu_stat_routes">ROUTES</string>
+    <string name="menu_stat_stars">STARS</string>
+    <string name="menu_stat_best">BEST</string>
+
+    <string name="game_route_code">ROUTE CODE</string>
+    <string name="game_actions">ACTIONS</string>
+    <string name="game_launch">GO</string>
+    <string name="game_launches">LAUNCHES</string>
+    <string name="game_signs">SIGNS</string>
+    <string name="game_coach">TAP A SIGN, THEN TAP A SOCKET</string>
+
+    <string name="result_cleared">ROUTE CLEARED</string>
+    <string name="result_shut_down">YARD SHUT DOWN</string>
+    <string name="result_out_of_actions">OUT OF ACTIONS</string>
+    <string name="result_route_travelled">ROUTE TRAVELLED</string>
+    <string name="result_play_again">PLAY AGAIN</string>
+    <string name="result_next_route">NEXT ROUTE</string>
+    <string name="result_menu">MENU</string>
+    <string name="result_stat_actions">ACTIONS USED</string>
+    <string name="result_stat_launches">LAUNCHES</string>
+    <string name="result_stat_stars">STARS</string>
+
+    <string name="dialog_route_title">SELECT ROUTE</string>
+    <string name="dialog_route_subtitle">LONGER CODE · MORE STARS</string>
+    <string name="dialog_tutorial_title">SIGN GUIDE</string>
+    <string name="dialog_tutorial_got_it">GOT IT</string>
+    <string name="dialog_settings_title">SETTINGS</string>
+    <string name="dialog_close">CLOSE</string>
+    <string name="settings_haptics">HAPTICS</string>
+    <string name="settings_contrast">HIGH CONTRAST</string>
+    <string name="settings_motion">REDUCED MOTION</string>
+    <string name="settings_reset">RESET PROGRESS</string>
+    <string name="settings_reset_confirm">TAP AGAIN TO CONFIRM</string>
+
+    <string name="tier_short_haul">SHORT HAUL</string>
+    <string name="tier_standard">STANDARD</string>
+    <string name="tier_long_haul">LONG HAUL</string>
+    <string name="tier_night_shift">NIGHT SHIFT</string>
+
+    <string name="tutorial_step_one_title">READ THE CODE</string>
+    <string name="tutorial_step_one_body">The strip at the top lists the turns in order, from the entry gate.</string>
+    <string name="tutorial_step_two_title">TRACE THE ROUTE</string>
+    <string name="tutorial_step_two_body">The cart starts at the green gate heading up and drives straight until it meets a socket.</string>
+    <string name="tutorial_step_three_title">SET ONE SIGN</string>
+    <string name="tutorial_step_three_body">Tap a sign in the dock, then tap the socket where that turn happens.</string>
+
+    <string name="value_placeholder">—</string>
+    <string name="fmt_route">ROUTE %1$02d</string>
+    <string name="fmt_code">CODE %1$d</string>
+    <string name="fmt_route_chip">ROUTE %1$02d · CODE %2$d</string>
+    <string name="fmt_fraction">%1$d/%2$d</string>
+    <string name="fmt_count">%1$d</string>
+    <string name="fmt_token_badge">x%1$d</string>
+    <string name="fmt_tier_caption">CODE %1$d · %2$d ACTIONS</string>
+    <string name="fmt_next_up">NEXT UP · CODE %1$d</string>
+    <string name="fmt_stars_of">%1$d/3</string>
+
+    <string name="cd_splash_emblem">Route sign emblem</string>
+    <string name="cd_menu_art">Works yard route map</string>
+    <string name="cd_settings">Open settings</string>
+    <string name="cd_back">Go back</string>
+    <string name="cd_board">Route board. Tap a sign, then tap a socket.</string>
+    <string name="cd_star_earned">Star earned</string>
+    <string name="cd_star_locked">Star not earned</string>
+    <string name="cd_tier_star">Tier star</string>
+    <string name="cd_tutorial_board">Tutorial route board</string>
+
+    <string name="sd_chip_fixed">Step %1$d of %2$d, fixed entry heading</string>
+    <string name="sd_chip_pending">Step %1$d of %2$d, pending</string>
+    <string name="sd_chip_cleared">Step %1$d of %2$d, cleared</string>
+    <string name="sd_chip_failed">Step %1$d of %2$d, failed</string>
+    <string name="sd_token_available">%1$s, %2$d left</string>
+    <string name="sd_token_selected">%1$s, selected</string>
+    <string name="sd_token_empty">%1$s, none left</string>
+    <string name="sd_actions_left">%1$d actions left</string>
+    <string name="sd_launches_used">%1$d of %2$d launches used</string>
+    <string name="sd_signs_placed">%1$d of %2$d signs placed</string>
+    <string name="sd_tier_selected">%1$s, selected tier</string>
+    <string name="sd_tier_available">%1$s, available tier</string>
+    <string name="sd_switch_on">On</string>
+    <string name="sd_switch_off">Off</string>
+
+    <string name="dir_up">TURN UP</string>
+    <string name="dir_right">TURN RIGHT</string>
+    <string name="dir_down">TURN DOWN</string>
+    <string name="dir_left">TURN LEFT</string>
+</resources>

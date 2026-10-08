@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/space_m"
+    android:layout_marginEnd="@dimen/space_m"
+    android:background="@drawable/shape_dialog_hard"
+    android:paddingStart="@dimen/screen_margin"
+    android:paddingTop="@dimen/screen_margin"
+    android:paddingEnd="@dimen/screen_margin"
+    android:paddingBottom="@dimen/space_xl">
+
+    <TextView
+        android:id="@+id/route_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="@string/dialog_route_title"
+        android:textAppearance="@style/TextAppearance.App.Title" />
+
+    <TextView
+        android:id="@+id/route_dialog_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/route_dialog_title"
+        android:layout_marginTop="@dimen/space_xs"
+        android:letterSpacing="0.16"
+        android:maxLines="1"
+        android:text="@string/dialog_route_subtitle"
+        android:textAllCaps="true"
+        android:textColor="@color/accent_cool"
+        android:textSize="11sp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/route_dialog_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/route_dialog_subtitle"
+        android:layout_marginTop="@dimen/space_l">
+
+        <LinearLayout
+            android:id="@+id/route_dialog_tiers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/route_dialog_close"
+        style="@style/Widget.App.Button.Secondary"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_dialog_height"
+        android:layout_below="@id/route_dialog_scroll"
+        android:layout_marginTop="@dimen/space_l"
+        android:text="@string/dialog_close" />
+
+</RelativeLayout>

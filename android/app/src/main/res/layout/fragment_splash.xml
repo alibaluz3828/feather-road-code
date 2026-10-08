@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash_gradient">
+
+    <ImageView
+        android:id="@+id/splash_backdrop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.34"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_splash"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/splash_scrim"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/scrim_menu_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/splash_hazard"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:alpha="0.10"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pattern_hazard_diagonal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/splash_plate"
+        android:layout_width="@dimen/splash_plate_size"
+        android:layout_height="@dimen/splash_plate_size"
+        android:background="@drawable/shape_sign_plate"
+        app:layout_constraintBottom_toTopOf="@id/splash_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <ImageView
+            android:id="@+id/splash_emblem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/splash_plate_inset"
+            android:contentDescription="@string/cd_splash_emblem"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sprite_sign_arrow" />
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/splash_band"
+        android:layout_width="@dimen/splash_band_width"
+        android:layout_height="@dimen/splash_band_height"
+        android:layout_marginTop="@dimen/space_xl"
+        android:background="@drawable/shape_accent_bar"
+        app:layout_constraintEnd_toEndOf="@id/splash_plate"
+        app:layout_constraintStart_toStartOf="@id/splash_plate"
+        app:layout_constraintTop_toBottomOf="@id/splash_plate" />
+
+    <TextView
+        android:id="@+id/splash_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:gravity="center"
+        android:maxLines="2"
+        android:shadowColor="@color/accent_hazard"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="0.01"
+        android:text="@string/app_title"
+        android:textAppearance="@style/TextAppearance.App.Display"
+        app:layout_constraintBottom_toTopOf="@id/splash_subtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/splash_plate" />
+
+    <TextView
+        android:id="@+id/splash_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/space_m"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:gravity="center"
+        android:letterSpacing="0.22"
+        android:text="@string/splash_subtitle"
+        android:textAllCaps="true"
+        android:textColor="@color/accent_cool"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/splash_title" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/splash_progress"
+        android:layout_width="@dimen/splash_progress_width"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_marginBottom="@dimen/space_l"
+        app:indicatorColor="@color/accent_primary"
+        app:layout_constraintBottom_toTopOf="@id/splash_loading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:trackColor="@color/surface_raised"
+        app:trackCornerRadius="0dp"
+        app:trackThickness="@dimen/splash_progress_thickness" />
+
+    <TextView
+        android:id="@+id/splash_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:accessibilityLiveRegion="polite"
+        android:letterSpacing="0.30"
+        android:text="@string/splash_loading"
+        android:textAllCaps="true"
+        android:textColor="@color/text_muted"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

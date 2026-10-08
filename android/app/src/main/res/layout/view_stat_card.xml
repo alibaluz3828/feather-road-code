@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:id="@+id/stat_notch"
+        android:layout_width="8dp"
+        android:layout_height="6dp"
+        android:background="@drawable/shape_accent_bar" />
+
+    <TextView
+        android:id="@+id/stat_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:lineHeight="24sp"
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.App.Numeric"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/stat_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.App.Label" />
+
+</merge>

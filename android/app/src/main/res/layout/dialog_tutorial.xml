@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/space_m"
+    android:layout_marginEnd="@dimen/space_m"
+    android:background="@drawable/shape_dialog_hard"
+    android:paddingStart="@dimen/screen_margin"
+    android:paddingTop="@dimen/screen_margin"
+    android:paddingEnd="@dimen/screen_margin"
+    android:paddingBottom="@dimen/space_xl">
+
+    <TextView
+        android:id="@+id/tutorial_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="@string/dialog_tutorial_title"
+        android:textAppearance="@style/TextAppearance.App.Title" />
+
+    <LinearLayout
+        android:id="@+id/tutorial_steps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tutorial_title"
+        android:layout_marginTop="@dimen/space_m"
+        android:orientation="vertical" />
+
+    <com.AsDfGhJ.jMiKoLp.core.ui.RouteBoardView
+        android:id="@+id/tutorial_board"
+        android:layout_width="@dimen/tutorial_board_size"
+        android:layout_height="@dimen/tutorial_board_size"
+        android:layout_below="@id/tutorial_steps"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/space_l"
+        android:contentDescription="@string/cd_tutorial_board" />
+
+    <LinearLayout
+        android:id="@+id/tutorial_tray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tutorial_board"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/space_m"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tutorial_got_it"
+        style="@style/Widget.App.Button.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_dialog_height"
+        android:layout_below="@id/tutorial_tray"
+        android:layout_marginTop="@dimen/space_l"
+        android:text="@string/dialog_tutorial_got_it"
+        android:textSize="18sp" />
+
+</RelativeLayout>

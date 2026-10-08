@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.App.Display" parent="TextAppearance.Material3.DisplaySmall">
+        <item name="android:textSize">@dimen/text_display</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:letterSpacing">0.10</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextAppearance.App.Headline" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textSize">@dimen/text_headline</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:letterSpacing">0.06</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextAppearance.App.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.04</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextAppearance.App.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="TextAppearance.App.Label" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textSize">@dimen/text_label</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.26</item>
+        <item name="android:lineHeight">13sp</item>
+        <item name="android:textColor">@color/text_muted</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextAppearance.App.Numeric" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:textSize">@dimen/text_numeric</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:lineHeight">26sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:fontFeatureSettings">tnum</item>
+    </style>
+
+    <style name="Widget.App.Button.Primary" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/accent_primary</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:letterSpacing">0.18</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="cornerRadius">@dimen/radius_button</item>
+        <item name="strokeWidth">@dimen/border_thick</item>
+        <item name="strokeColor">@color/ink</item>
+        <item name="rippleColor">@color/ripple_dark</item>
+        <item name="iconTint">@color/ink</item>
+        <item name="iconSize">@dimen/button_icon_glyph</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">@dimen/space_m</item>
+        <item name="elevation">0dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <style name="Widget.App.Button.Secondary" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:letterSpacing">0.12</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="cornerRadius">@dimen/radius_chip</item>
+        <item name="strokeWidth">@dimen/border_thick</item>
+        <item name="strokeColor">@color/accent_cool</item>
+        <item name="rippleColor">@color/ripple_light</item>
+        <item name="elevation">0dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <style name="Widget.App.Button.Danger" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/accent_hazard</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:letterSpacing">0.12</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="cornerRadius">@dimen/radius_chip</item>
+        <item name="strokeWidth">@dimen/border_thick</item>
+        <item name="strokeColor">@color/ink</item>
+        <item name="rippleColor">@color/ripple_light</item>
+        <item name="elevation">0dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <style name="Widget.App.Button.IconOnly" parent="Widget.Material3.Button.IconButton">
+        <item name="backgroundTint">@color/surface_raised</item>
+        <item name="iconTint">@color/accent_primary</item>
+        <item name="iconSize">@dimen/button_icon_glyph</item>
+        <item name="cornerRadius">@dimen/radius_chip</item>
+        <item name="strokeWidth">@dimen/border_thick</item>
+        <item name="strokeColor">@color/outline</item>
+        <item name="rippleColor">@color/ripple_light</item>
+        <item name="elevation">0dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="Widget.App.Card" parent="Widget.Material3.CardView.Outlined">
+        <item name="cardBackgroundColor">@color/surface</item>
+        <item name="cardCornerRadius">@dimen/radius_block</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeWidth">@dimen/border_thick</item>
+        <item name="strokeColor">@color/outline</item>
+    </style>
+
+    <style name="Widget.App.ProgressIndicator" parent="Widget.Material3.LinearProgressIndicator">
+        <item name="indicatorColor">@color/accent_primary</item>
+        <item name="trackColor">@color/surface_raised</item>
+        <item name="trackThickness">@dimen/splash_progress_thickness</item>
+        <item name="trackCornerRadius">0dp</item>
+    </style>
+
+</resources>

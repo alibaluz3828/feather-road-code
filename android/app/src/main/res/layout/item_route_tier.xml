@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tier_root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/tier_row_height"
+    android:background="@drawable/shape_block_raised"
+    android:baselineAligned="false"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/space_m"
+    android:paddingEnd="@dimen/space_m">
+
+    <View
+        android:id="@+id/tier_accent"
+        android:layout_width="6dp"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_accent_bar" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_m"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tier_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.08"
+            android:maxLines="1"
+            android:textAllCaps="true"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tier_caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.App.Label" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tier_stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/tier_star_one"
+            android:layout_width="@dimen/sprite_star_small"
+            android:layout_height="@dimen/sprite_star_small"
+            android:contentDescription="@string/cd_tier_star"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sprite_star" />
+
+        <ImageView
+            android:id="@+id/tier_star_two"
+            android:layout_width="@dimen/sprite_star_small"
+            android:layout_height="@dimen/sprite_star_small"
+            android:layout_marginStart="@dimen/space_xs"
+            android:contentDescription="@string/cd_tier_star"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sprite_star" />
+
+        <ImageView
+            android:id="@+id/tier_star_three"
+            android:layout_width="@dimen/sprite_star_small"
+            android:layout_height="@dimen/sprite_star_small"
+            android:layout_marginStart="@dimen/space_xs"
+            android:contentDescription="@string/cd_tier_star"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sprite_star" />
+
+    </LinearLayout>
+
+</LinearLayout>

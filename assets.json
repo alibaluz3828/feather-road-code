@@ -1,0 +1,54 @@
+{
+  "assets": [
+    {
+      "name": "icon_1024",
+      "type": "icon",
+      "prompt": "App icon, glossy 3D diamond-shaped yellow road sign plate with one thick black turn arrow, centered, dark navy radial gradient background, crisp, no text"
+    },
+    {
+      "name": "bg_splash",
+      "type": "bg",
+      "prompt": "Vertical 9:16 mobile game loader background, dark asphalt night works-yard, faint yellow hazard chevrons, heavy vignette, cinematic, no text, no UI elements"
+    },
+    {
+      "name": "bg_menu",
+      "type": "bg",
+      "prompt": "Vertical 9:16 mobile game menu background, top-down stylized industrial cargo yard map, dark asphalt plates, yellow painted route lines, orange cones, 3D render, vibrant, no text, no UI elements"
+    },
+    {
+      "name": "bg_game",
+      "type": "bg",
+      "prompt": "Vertical 9:16 mobile game background, soft blurred dark asphalt texture with faint painted lane markings, low contrast for UI overlay, no text, no UI elements"
+    },
+    {
+      "name": "sprite_cart",
+      "type": "sprite",
+      "prompt": "One single cute cartoon yellow industrial push cart with cargo crate, three-quarter view, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_sign_arrow",
+      "type": "sprite",
+      "prompt": "One single cartoon diamond road sign plate on a short post, blank yellow face with black border, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_checkpoint",
+      "type": "sprite",
+      "prompt": "One single cartoon teal checkpoint beacon lamp on a low base, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_flag_goal",
+      "type": "sprite",
+      "prompt": "One single cartoon green and white checkered finish flag on a pole, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_cone",
+      "type": "sprite",
+      "prompt": "One single cartoon orange traffic cone with white reflective band, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_star",
+      "type": "sprite",
+      "prompt": "One single cartoon golden five pointed star with soft bevel, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    }
+  ]
+}
